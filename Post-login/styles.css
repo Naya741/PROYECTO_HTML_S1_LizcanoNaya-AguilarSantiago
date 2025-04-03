@@ -3,6 +3,30 @@
     src: url(../fonts/MyriadPro-Light.otf);
 }
 
+@keyframes desvanecer {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes desvanecerIcono {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
 body{
     margin: 0;
 }
@@ -14,74 +38,92 @@ body{
     overflow: hidden;
     position: absolute;
     background-image: url(../img/pexels-pixabay-159400.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .bienvenido__Fondo--Recuadro{
     background-color: white;
     width: 40vw;
-    height: 80vh;
+    height: auto;
     text-align: center;
-    margin: 5% 30%;
+    padding: 15px 0;
+    justify-self: center;
     border-radius: 67px;
+    display: flex;
+    flex-direction: column;
+    animation-name: desvanecer;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+
 }
 
-.bienvenido__Logo{
-    padding: 3% 0px;
+.top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
 }
 
-.bienvenido__Titulo--Bienvenido{
-    font-size: 1vw;
-    position: fixed;
-    margin-left: 10%;
+.top img{
+    width: 130px;
+    height: 120px;
 }
 
-h1{
+.foto__pedro img{
+    width: 150px;
+    height: 150px;
+    max-width: 350px;
+}
+
+.information{
+    display: flex;
+    flex-direction: column;
+}
+
+.top h1{
     font-family: 'Myriad Pro';
-    font-weight: 1200;
+    font-size: 40px;
+    width: auto;
+    text-wrap: wrap;
 }
 
-p{
-    font-family: 'Myriad Pro';
-    font-size: 500;
+.information p, h2{
+    font-family:'Myriad Pro';
 }
 
-.bienvenido__Foto{
-    width: 80%;
-    height: 50%;
-    margin: 2vh 5vw;
-}
 
-.bienvenido__Foto > img{
+.fondo{
+    height: 100vh;
     width: 100%;
+    background-color: black;
+    overflow: hidden;
+    display: flex;
+    background-image: url('../img/pexels-pixabay-159400.png');
+}
+
+.fondo > img{
     height: 100%;
+    width: 100%;
 }
 
-
-.bienvenido__Titulo{
-    font-size: 1vw;
-    position: fixed;
-    margin-left: 8%;
-}
-
-
-.bienvenido__Texto{
-    font-size: 1.3vw;
-    position: fixed;
-    margin-left: 15%;
-    margin-top: 5%;
-}
-
-
-.centrar{
+.fondo__icono{
+    height: 20%;
+    width: 20%;
     text-align: center;
-    margin-bottom: 0px;
+    margin: 20% 42%;
+    position: fixed;
+    animation: desvanecerIcono;
+    animation-duration: 3s;
+    animation-delay: 5s;
+    animation-delay: 1s;
+    opacity: 0;
 }
 
-@media (max-width: 436px) {
-    body{
-        margin: 0;
-    }
-    
+@media (max-width: 430px) {
     .bienvenido__Fondo{
         height: 100%;
         width: 100%;
@@ -89,140 +131,122 @@ p{
         overflow: hidden;
         position: absolute;
         background-image: url(../img/pexels-pixabay-159400.png);
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
     .bienvenido__Fondo--Recuadro{
         background-color: white;
-        width: 40vw;
-        height: 80vh;
+        width: 366px;
+        height: 447px;
         text-align: center;
-        margin: 5% 30%;
+        padding: 15px 0;
+        justify-self: center;
         border-radius: 67px;
+        display: flex;
+        flex-direction: column;
+    
+    }
+
+    .top{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        gap: 2px;
     }
     
-    .bienvenido__Logo{
-        padding: 3% 0px;
+    .top img{
+        max-width: 60px;
+        max-height: 67px;
     }
     
-    .bienvenido__Titulo--Bienvenido{
-        font-size: 1vw;
-        position: fixed;
-        margin-left: 10%;
+    .foto__pedro img{
+        width: 150px;
+        height: 150px;
+        max-width: 350px;
     }
     
-    h1{
+    .information{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .top h1{
         font-family: 'Myriad Pro';
-        font-weight: 1200;
+        font-size: 25px;
+        width: auto;
+        text-wrap: wrap;
     }
     
-    p{
-        font-family: 'Myriad Pro';
-        font-size: 500;
+    .information h2{
+        font-family:'Myriad Pro';
     }
-    
-    .bienvenido__Foto{
-        width: 80%;
-        height: 50%;
-        margin: 2vh 5vw;
-    }
-    
-    .bienvenido__Foto > img{
-        width: 100%;
-        height: 100%;
-    }
-    
-    
-    .bienvenido__Titulo{
-        font-size: 1vw;
-        position: fixed;
-        margin-left: 8%;
-    }
-    
-    
-    .bienvenido__Texto{
-        font-size: 1.3vw;
-        position: fixed;
-        margin-left: 15%;
-        margin-top: 5%;
-    }
-    
-    
-    .centrar{
-        text-align: center;
-        margin-bottom: 0px;
-    }
-    
-        margin: 0;
-    }
-    
-    .bienvenido__Fondo{
-        height: 100%;
-        width: 100%;
-        background-color: black;
-        overflow: hidden;
-        position: absolute;
-        background-image: url(../img/pexels-pixabay-159400.png);
-    }
-    
-    .bienvenido__Fondo--Recuadro{
-        background-color: white;
-        width: 40vw;
-        height: 80vh;
-        text-align: center;
-        margin: 5% 30%;
-        border-radius: 67px;
-    }
-    
-    .bienvenido__Logo{
-        padding: 3% 0px;
-    }
-    
-    .bienvenido__Titulo--Bienvenido{
-        font-size: 1vw;
-        position: fixed;
-        margin-left: 10%;
-    }
-    
-    h1{
-        font-family: 'Myriad Pro';
-        font-weight: 1200;
-    }
-    
-    p{
-        font-family: 'Myriad Pro';
-        font-size: 500;
-    }
-    
-    .bienvenido__Foto{
-        width: 80%;
-        height: 50%;
-        margin: 2vh 5vw;
-    }
-    
-    .bienvenido__Foto > img{
-        width: 100%;
-        height: 100%;
-    }
-    
-    
-    .bienvenido__Titulo{
-        font-size: 1vw;
-        position: fixed;
-        margin-left: 8%;
-    }
-    
-    
-    .bienvenido__Texto{
-        font-size: 1.3vw;
-        position: fixed;
-        margin-left: 15%;
-        margin-top: 5%;
-    }
-    
-    
-    .centrar{
-        text-align: center;
-        margin-bottom: 0px;
-    }
-    
+
+    .top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
 }
+
+    .top img{
+    width: 130px;
+    height: 130px;
+}
+
+    .foto__pedro img{
+    width: 150px;
+    height: 150px;
+    max-width: 350px;
+}
+
+    .information{
+    display: flex;
+    flex-direction: column;
+}
+
+    .top h1{
+    font-family: 'Myriad Pro';
+    font-size: 30px;
+    width: auto;
+    text-wrap: wrap;
+}
+
+    .information h2{
+    font-family:'Myriad Pro';
+}
+
+    .information p{
+    font-family:'Myriad Pro';
+}
+
+    .fondo{
+        height: 100vh;
+        width: 100%;
+        background-color: black;
+        overflow: hidden;
+        display: flex;
+        background-image: url('../img/pexels-pixabay-159400.png');
+}
+
+    .fondo > img{
+        height: 100%;
+        width: 100%;
+}
+
+    .fondo__icono{
+        height: 20%;
+        width: 20%;
+        text-align: center;
+        margin: 20% 42%;
+        position: fixed;
+}
+
+}
+
+
