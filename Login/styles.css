@@ -99,7 +99,6 @@ body{
 /* LOGIN LOGIN */
 body{
     margin: 0;
-
 }
 
 .fondo{
@@ -204,12 +203,18 @@ body{
     padding-bottom: 1%;
 }
 
+.login__div--Boton{
+    height: 10%;
+    width: 40%;
+}
+
 .login__Boton{
     background-color: #ff7221;
-    width: 40%;
-    height: 10%;
-    margin: 0 28%;
+    width: 100%;
+    height: 100%;
+    margin: 0 15vw;
     border-radius: 25px;
+    border-color: #ff7221;
 }
 
 .login__Boton--text{
@@ -217,9 +222,10 @@ body{
     color: white;
     font-size: 19px;
     padding: 8% 8%;
-    padding-bottom: 10vh;
+    padding-top: 2.5vh;
     text-align: center;
     font-size: 2vh;
+    text-decoration: none;
 }
 
 .login__PieDePagina {
@@ -271,12 +277,19 @@ body{
         font-size: 3.2vh;
     }
 
+    .login__div--Boton{
+        height: 10%;
+        width: 40%;
+        margin: 0% 12vh;
+    }
+    
     .login__Boton{
         background-color: #ff7221;
-        width: 20vh;
-        height: 10%;
-        margin: 0 28%;
+        width: 100%;
+        height: 100%;
+        margin: 0 0%;
         border-radius: 25px;
+        border-color: #ff7221;
     }
 
     .login__Boton--text{
@@ -287,6 +300,7 @@ body{
         padding-top: 2.5vh;
         text-align: center;
         font-size: 2vh;
+        text-decoration: none;
     }
     
     .login__PieDePagina {
