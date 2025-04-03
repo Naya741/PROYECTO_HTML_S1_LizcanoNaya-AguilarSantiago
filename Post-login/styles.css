@@ -1,0 +1,228 @@
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url(../fonts/MyriadPro-Light.otf);
+}
+
+body{
+    margin: 0;
+}
+
+.bienvenido__Fondo{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    overflow: hidden;
+    position: absolute;
+    background-image: url(../img/pexels-pixabay-159400.png);
+}
+
+.bienvenido__Fondo--Recuadro{
+    background-color: white;
+    width: 40vw;
+    height: 80vh;
+    text-align: center;
+    margin: 5% 30%;
+    border-radius: 67px;
+}
+
+.bienvenido__Logo{
+    padding: 3% 0px;
+}
+
+.bienvenido__Titulo--Bienvenido{
+    font-size: 1vw;
+    position: fixed;
+    margin-left: 10%;
+}
+
+h1{
+    font-family: 'Myriad Pro';
+    font-weight: 1200;
+}
+
+p{
+    font-family: 'Myriad Pro';
+    font-size: 500;
+}
+
+.bienvenido__Foto{
+    width: 80%;
+    height: 50%;
+    margin: 2vh 5vw;
+}
+
+.bienvenido__Foto > img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.bienvenido__Titulo{
+    font-size: 1vw;
+    position: fixed;
+    margin-left: 8%;
+}
+
+
+.bienvenido__Texto{
+    font-size: 1.3vw;
+    position: fixed;
+    margin-left: 15%;
+    margin-top: 5%;
+}
+
+
+.centrar{
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+@media (max-width: 436px) {
+    body{body{
+        margin: 0;
+    }
+    
+    .bienvenido__Fondo{
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        overflow: hidden;
+        position: absolute;
+        background-image: url(../img/pexels-pixabay-159400.png);
+    }
+    
+    .bienvenido__Fondo--Recuadro{
+        background-color: white;
+        width: 40vw;
+        height: 80vh;
+        text-align: center;
+        margin: 5% 30%;
+        border-radius: 67px;
+    }
+    
+    .bienvenido__Logo{
+        padding: 3% 0px;
+    }
+    
+    .bienvenido__Titulo--Bienvenido{
+        font-size: 1vw;
+        position: fixed;
+        margin-left: 10%;
+    }
+    
+    h1{
+        font-family: 'Myriad Pro';
+        font-weight: 1200;
+    }
+    
+    p{
+        font-family: 'Myriad Pro';
+        font-size: 500;
+    }
+    
+    .bienvenido__Foto{
+        width: 80%;
+        height: 50%;
+        margin: 2vh 5vw;
+    }
+    
+    .bienvenido__Foto > img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    
+    .bienvenido__Titulo{
+        font-size: 1vw;
+        position: fixed;
+        margin-left: 8%;
+    }
+    
+    
+    .bienvenido__Texto{
+        font-size: 1.3vw;
+        position: fixed;
+        margin-left: 15%;
+        margin-top: 5%;
+    }
+    
+    
+    .centrar{
+        text-align: center;
+        margin-bottom: 0px;
+    }
+    
+        margin: 0;
+    }
+    
+    .bienvenido__Fondo{
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        overflow: hidden;
+        position: absolute;
+        background-image: url(../img/pexels-pixabay-159400.png);
+    }
+    
+    .bienvenido__Fondo--Recuadro{
+        background-color: white;
+        width: 40vw;
+        height: 80vh;
+        text-align: center;
+        margin: 5% 30%;
+        border-radius: 67px;
+    }
+    
+    .bienvenido__Logo{
+        padding: 3% 0px;
+    }
+    
+    .bienvenido__Titulo--Bienvenido{
+        font-size: 1vw;
+        position: fixed;
+        margin-left: 10%;
+    }
+    
+    h1{
+        font-family: 'Myriad Pro';
+        font-weight: 1200;
+    }
+    
+    p{
+        font-family: 'Myriad Pro';
+        font-size: 500;
+    }
+    
+    .bienvenido__Foto{
+        width: 80%;
+        height: 50%;
+        margin: 2vh 5vw;
+    }
+    
+    .bienvenido__Foto > img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    
+    .bienvenido__Titulo{
+        font-size: 1vw;
+        position: fixed;
+        margin-left: 8%;
+    }
+    
+    
+    .bienvenido__Texto{
+        font-size: 1.3vw;
+        position: fixed;
+        margin-left: 15%;
+        margin-top: 5%;
+    }
+    
+    
+    .centrar{
+        text-align: center;
+        margin-bottom: 0px;
+    }
+    
+}
