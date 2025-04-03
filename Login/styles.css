@@ -76,8 +76,285 @@ body{
         height: 20%;
         width: 20%;
         text-align: center;
-        margin: 40vh 42%;
+        margin: 50vh 42vw;
+        animation: desvanecerIcono;
+        animation-duration: 3s;
+        animation-direction: alternate-reverse;
     }
 
 
+    @keyframes desvanecerIcono {
+        0%{
+            opacity: 1;
+        }
+        50%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
 }
+}
+
+/* LOGIN LOGIN */
+body{
+    margin: 0;
+
+}
+
+.fondo{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    overflow: hidden;
+    position: absolute;
+    background-image: url(../img/pexels-pixabay-159400.png);
+}
+
+.fondo > img{
+    height: 100%;
+    width: 100%;
+}
+
+.fondo__icono{
+    height: 20%;
+    width: 20%;
+    text-align: center;
+    position: relative;
+    margin: 20% 42%;
+}
+
+.fondo__icono > img{
+    width: 100%;
+    height: 100%;
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url(../fonts/MyriadPro-Light.otf);
+}
+
+body{
+    margin: 0;
+
+}
+
+.fondo{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    overflow: hidden;
+    position: absolute;
+    background-image: url(../img/pexels-pixabay-159400.png);
+}
+
+.login{
+    background-color: white;
+    width: 50vw;
+    height: 75vh;
+    text-align: center;
+    margin: 8vw 45vh;
+    position: fixed;
+    border-radius: 67px;
+}
+
+.login__Imagen{
+    padding: 2%;
+    width: 15vw;
+    height: 15vh;
+    margin: 0% auto;
+}
+
+.login__Imagen > img{
+    width: 90%;
+    height: 90%;
+    text-align: center;
+}
+
+.login__Texto--title{
+    font-family: 'Myriad Pro';
+    word-break: normal;
+    width: 60%;
+    text-align: center;
+    margin: 0% 10vw;
+}
+
+.login__Texto--text{
+    font-family: 'Myriad Pro';
+    font-size: 1.5vh;
+}
+
+.login__Login{
+    margin: 5% 15%;
+}
+
+.login__Login--texto{
+    font-family: 'Myriad Pro';
+    text-align: left;
+    margin: 0% 5%;
+    font-size: 25px;
+}
+
+.login__Login--Input{
+    background-color: white;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    width: 92%;
+    height: 30px;
+    padding-bottom: 1%;
+}
+
+.login__Boton{
+    background-color: #ff7221;
+    width: 40%;
+    height: 10%;
+    margin: 0 28%;
+    border-radius: 25px;
+}
+
+.login__Boton--text{
+    font-family: 'Myriad Pro';
+    color: white;
+    font-size: 19px;
+    padding: 8% 8%;
+    padding-bottom: 10vh;
+    text-align: center;
+    font-size: 2vh;
+}
+
+.login__PieDePagina {
+    padding-bottom: 0px;
+    font-family: 'Myriad Pro';
+    font-family: 4vh;
+}
+
+@media (max-width: 430px){
+    .fondo{
+        height: 100vh;
+        width: 100vw;
+        background-color: black;
+        overflow: hidden;
+        position: fixed;
+        background-image: url('../img/pexels-pixabay-159400.png');
+    }
+
+    .login{
+        background-color: white;
+        width: 90vw;
+        height: 75vh;
+        text-align: center;
+        margin: 27vw 2.5vh;
+        position: fixed;
+        border-radius: 67px;
+    }
+
+
+    .login__Imagen{
+    padding: 0%;
+    width: 20vw;
+    height: 15vh;
+    margin: 2vh auto;
+    }
+
+    .login__Imagen > img{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+
+    .login__Texto--title{
+        font-family: 'Myriad Pro';
+        word-break: normal;
+        width: 90vw;
+        text-align: center;
+        margin: 0% 0%;
+        font-size: 3.2vh;
+    }
+
+    .login__Boton{
+        background-color: #ff7221;
+        width: 20vh;
+        height: 10%;
+        margin: 0 28%;
+        border-radius: 25px;
+    }
+
+    .login__Boton--text{
+        font-family: 'Myriad Pro';
+        color: white;
+        font-size: 19px;
+        padding: 8% 8%;
+        padding-top: 2.5vh;
+        text-align: center;
+        font-size: 2vh;
+    }
+    
+    .login__PieDePagina {
+        padding-top: 3vh;
+        padding-bottom: 0px;
+        font-family: 'Myriad Pro';
+        font-family: 2vh;
+    }
+
+    #login{
+        position: absolute;
+        z-index: 1;
+    
+    }
+    
+    #login-pag{
+        position: absolute;
+        animation-duration: 3s;
+        animation-name: aparecerLogin;
+        animation-delay: 3s;
+        opacity: 1;
+        height: 100vh;
+        width: 100vw;
+        animation-fill-mode: forwards;
+        z-index: 10;
+    }
+    
+    @keyframes aparecerLogin{
+        0%{
+            opacity: 1;
+            z-index: 10;
+        }
+        100%{
+            opacity: 0;
+            z-index: 1;
+        }
+    }
+    
+}
+
+#login{
+    position: fixed;
+    z-index: 1;
+
+}
+
+#login-pag{
+    position: absolute;
+    animation-duration: 3s;
+    animation-name: aparecerLogin;
+    animation-delay: 3s;
+    opacity: 1;
+    height: 100vh;
+    width: 100vw;
+    animation-fill-mode: forwards;
+    z-index: 10;
+}
+
+@keyframes aparecerLogin{
+    0%{
+        opacity: 1;
+        z-index: 10;
+    }
+    100%{
+        opacity: 0;
+        z-index: 1;
+    }
+}
+
+
+
