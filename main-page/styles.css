@@ -6,7 +6,7 @@
 .top{
     display: flex;
     justify-content: center;
-    gap: 200px;
+    gap: 250px;
     padding-bottom: 10px;
     border-bottom: 2px solid black;
 }
@@ -27,6 +27,9 @@
 
 .top__Cen{
     display: flex;
+    align-self: center;
+    gap: 10px;
+    justify-content: center;
 }
 
 .top__Der{
@@ -72,7 +75,7 @@
 
 .bars{
     display: flex;
-    gap: 15px;
+    gap: 20px;
     justify-content: center;
 }
 
@@ -103,8 +106,6 @@ p{
     font-size: 20px;
 }
 
-
-
 .porcentaje{
     margin-left: 0.6vw;
     position: relative;
@@ -132,4 +133,27 @@ circle{
     transform-origin: 50%;
     stroke-linecap: round;
 }
+
+.bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.bottom button{
+    border-radius: 30px;
+    margin-top: 40px ;
+    background-color: #ff7721;
+    font-family: 'Myriad Pro';
+    color: white;
+    font-size: 25px;
+    border-color: #ff7721;
+}
+
+.bottom p{
+    padding: 10px 20px;
+}
+
+
 
