@@ -3,6 +3,16 @@
     src: url(../fonts/MyriadPro-Light.otf);
 }
 
+a{
+    font-family: 'Myriad Pro';
+    font-size: 30px;
+    text-decoration: none;
+}
+img{
+    width: 30px;
+    height: 30px;
+}
+
 .top{
     display: flex;
     justify-content: center;
@@ -162,4 +172,3 @@ circle{
 .bottom p{
     padding: 10px 20px; 
 }
-

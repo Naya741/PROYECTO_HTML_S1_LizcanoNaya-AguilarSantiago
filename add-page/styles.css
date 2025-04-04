@@ -10,11 +10,15 @@
     width: 60px;
 }
 
-.top p{
+a{
     font-family: 'Myriad Pro';
-    font-size: 25px;
+    font-size: 30px;
+    text-decoration: none;
 }
-
+img{
+    width: 30px;
+    height: 30px;
+}
 .top__Izq{
     display: flex;
     gap: 10px;

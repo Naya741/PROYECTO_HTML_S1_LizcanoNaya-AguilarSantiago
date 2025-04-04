@@ -1,60 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Añadir  </title>
+    <title>Añadir</title>
     <link rel="stylesheet" href="../add-page/styles.css">
+    <style>
+        .caja-central {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .caja-central__contenido {
+            border: 1px solid #ccc;
+            padding: 30px;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+            width: 700px;
+        }
+
+        .fila {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            margin-bottom: 15px;
+        }
+
+        .campo {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .campo input {
+            padding: 5px;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+        }
+
+        .area {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .area input {
+            width: 50%;
+            padding: 5px;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+        }
+
+        .boton-centrado {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .boton-centrado button {
+            background-color: rgb(255, 81, 0);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
 </head>
+
 <body>
     <div class="top">
         <div class="top__Izq">
             <img src="../img/Añadir.svg" alt="Añadir">
-            <p>Añadir</p>
+            <a href="../add-page/index.html">Añadir</a>
             <img src="../img/Refresh.svg" alt="Refrescar">
-            <p>Refrescar</p>
+            <a href="../add-page/index.html">Refrescar</a>
             <img src="../img/Eliminar.svg" alt="Eliminar">
-            <p>Eliminar</p></div>
+            <a href="../">Eliminar</a>
+        </div>
 
         <div class="top__Cen">
             <img src="../img/kario-mini.svg" alt="Logo" id="logo">
         </div>
+
         <div class="top__Der">
             <img src="../img/Reportar.svg" alt="Reportar">
-            <p>Reportar</p>
+            <a href="../">Reportar</a>
             <img src="../img/Ayuda.svg" alt="Ayuda">
-            <p>Ayuda</p>
+            <a>Ayuda</a>
         </div>
+
         <div class="top__Pedro">
             <img src="../img/notifications.svg" alt="notifications">
             <img src="../img/settings.svg" alt="settings">
             <img src="../img/foto-pedro.png" alt="FotoPedro" id="fotoPedro">
         </div>
     </div>
-        <div class="columnas">
-            <div class="row">
-                <div class="info">
-                    <p>Indicador</p>
-                    <input type="text" name="usuario" class="login__Login--Input">
+
+    <div class="caja-central">
+        <div class="caja-central__contenido">
+            <div class="fila">
+                <div class="campo">
+                    <label>Indicador</label>
+                    <input type="text">
                 </div>
-                <div class="info">
-                    <p>Indicador</p>
-                    <input type="text" name="usuario" class="login__Login--Input">
-                </div>
-                <div class="info">
-                    <p>Indicador</p>
-                    <input type="text" name="usuario" class="login__Login--Input">
-                </div>
-                <div class="info">
-                    <p>Indicador</p>
-                    <input type="text" name="usuario" class="login__Login--Input">
+                <div class="campo">
+                    <label>Fecha de terminación</label>
+                    <input type="">
                 </div>
             </div>
+
+            <div class="fila">
+                <div class="campo">
+                    <label>Fórmula</label>
+                    <input type="text">
+                </div>
+                <div class="campo">
+                    <label>Descripción</label>
+                    <input type="text">
+                </div>
+            </div>
+
+            <div class="fila">
+                <div class="campo">
+                    <label>Categoría</label>
+                    <input type="text">
+                </div>
+                <div class="campo">
+                    <label>Frecuencia</label>
+                    <input type="text">
+                </div>
+            </div>
+
+            <div class="fila">
+                <div class="campo">
+                    <label>Frecuencia</label>
+                    <input type="text">
+                </div>
+                <div class="campo">
+                    <label>Cumplimiento</label>
+                    <input type="text">
+                </div>
+            </div>
+
+            <div class="area">
+                <label>Área</label><br>
+                <input type="text">
+            </div>
         </div>
+    </div>
 
-
+    <div class="boton-centrado">
+        <button>Añadir elementos</button>
+    </div>
 </body>
-
-
 
 </html>
