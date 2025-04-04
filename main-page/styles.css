@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url(../fonts/MyriadPro-Light.otf);
+}
+
+.top{
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+}
+
+#logo{
+    width: 60px;
+}
+
+.top p{
+    font-family: 'Myriad Pro';
+    font-size: 25px;
+}
+
+.top__Izq{
+    display: flex;
+    gap: 10px;
+}
+
+.top__Cen{
+    display: flex;
+}
+
+.top__Der{
+    display: flex;
+    gap: 10px;
+}
+
+.top__Pedro{
+    display: flex;
+    gap: 25px;
+    border-left: 100px;
+}
+
+.top__Pedro img{
+    width: 50px;
+    height: 50px;
+    justify-self: center;
+    align-self: center;
+}
+
+#fotoPedro{
+    width: 60px;
+    height: 60px;
+}
+
+.information{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.information p, .information h2{
+    font-family: 'Myriad Pro';
+    font-size: 30px;
+    margin: 15px;
+}
+
+.panel{
+    display: flex;
+    flex-direction: column;
+}
+
+.bars{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.bars p{
+    font-family: 'Myriad Pro';
+    font-size: 30px;
+}
+
+p{
+    font-family: 'Myriad Pro';
+}
+
+.cuadros{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cuadro{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.cuadro p{
+    font-size: 20px;
+}
+
+
+
+.porcentaje{
+    margin-left: 0.6vw;
+    position: relative;
+    top: 10px;
+}
+
+.porcentaje span{
+    font-size: 0.7vw;
+    font-family: "pequeño";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    margin-top: 0.6vw;
+    margin-left: 0.4vw;
+}
+
+circle{
+    fill: none;
+    stroke: var(--color);
+    stroke-width: 0.3vw;
+    stroke-dasharray: var(--porcentaje) 100;
+    transform: rotate(-90deg);
+    transform-origin: 50%;
+    stroke-linecap: round;
+}
+
